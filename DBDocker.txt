@@ -1,1 +1,0 @@
-FROM LocalRegistry:5000/ryandb-image

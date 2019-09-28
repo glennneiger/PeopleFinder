@@ -7,12 +7,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PeopleFinder", "PeopleFinde
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7C92676B-A52A-404A-B9B1-1EC97977C906}"
 	ProjectSection(SolutionItems) = preProject
-		DBDocker.txt = DBDocker.txt
+		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PeopleFinder.Library", "PeopleFinder.Library\PeopleFinder.Library.csproj", "{9961EE09-1B80-4B0D-B20B-37B7DD4D5E4C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PeopleFinder.Test", "PeopleFinder.Test\PeopleFinder.Test.csproj", "{5F9FE40C-5F14-4DED-AAFF-1995270D1819}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PeopleFinder.Console", "PeopleFinder.Console\PeopleFinder.Console.csproj", "{027C3113-6A00-483F-8D86-1EBDFC0BAC5F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,6 +34,10 @@ Global
 		{5F9FE40C-5F14-4DED-AAFF-1995270D1819}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F9FE40C-5F14-4DED-AAFF-1995270D1819}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F9FE40C-5F14-4DED-AAFF-1995270D1819}.Release|Any CPU.Build.0 = Release|Any CPU
+		{027C3113-6A00-483F-8D86-1EBDFC0BAC5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{027C3113-6A00-483F-8D86-1EBDFC0BAC5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{027C3113-6A00-483F-8D86-1EBDFC0BAC5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{027C3113-6A00-483F-8D86-1EBDFC0BAC5F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

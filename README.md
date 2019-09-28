@@ -1,0 +1,42 @@
+# PeopleFinder API
+## Requirements
+• Provide a REST endpoint that takes a search input then returns a list of people whose first or last name matches what the input (including at least name, address, age, and interests). 
+• Seed the application with some users.
+• Provide a REST endpoint that allows addition of new users.
+• Provide documentation to interact with the REST endpoints.
+• Use Entity Framework Code First to talk to the database.
+• Add automated testing for appropriate parts of the application.
+#### Extra Credit
+• Write PowerShell scripts to add or search for particular users.
+• Simulate latency in the API call.
+
+## Technical Architecture
+From a technical solution standpoint, the following frameworks/technologies were used to accomplish the proposed requirements and extra credit.
+
+• .NET Core 3.0
+• C#
+• WebAPI 2
+• Entity Framework (Code First)
+• SQLite
+• MSTest
+• Moq
+• Swashbuckle
+
+## Solution Description
+To meet the proposed requirements, I first created a database with a Persons table using EF Code First via the PeopleFinder.Console project. This Persons table contains integer ID, first name, last name, address, age, and interests fields. With the database setup, I then created the core PeopleFinder project - first implementing a "person" service layer with the following functions.
+
+• SelectAll - returning the full list of results within the Persons table
+• SelectByID - returning a singular person based on input ID
+• Search - returning a list of results where first name or last name matches the search input
+• Add - adding a new person to the Persons table
+
+With the service layer created (both concrete and abstract), I then created the person controller with REST endpoints corresponding with each service function listed above. I also am injecting the person service into the controller's constructor for purposes of modularity and unit testing. I then implemented Swashbuckle (Swagger UI) to serve as self maintained REST documentation (which is also the initial launch page upon running the API).
+
+With the API project in place, I then created a MSTest project with test methods written to cover all controller and service functions. For the controller tests, I'm mocking the associated service methods using Moq to isolate testing the controller. For the service tests, I'm using SQLite in-line memory testing for SelectAll, SelectByID, and Search. I'm mocking the person context to test the Add service method.
+
+For the Extra Credit portion, I wrote the following PowerShell scripts.
+
+• add_data.ps1 - this script prompts the user for input to create a new "person" and add it to the Persons table
+• search_data.ps1 - this script prompts the user for search criteria and returns a list of persons whose first or last name matches the input criteria
+
+I also added a delay filter within the PeopleFinder API project. This allowed me to simulate latency (based on a defined delay variable) to all REST endpoints. I implemented this filter within the ConfigureServices method.
