@@ -5,7 +5,7 @@ namespace PeopleFinder.Filter
 {
     public class DelayFilter : IAsyncActionFilter
     {
-        private int _delayInMilliseconds;
+        private readonly int _delayInMilliseconds;
         public DelayFilter()
         {
             _delayInMilliseconds = 3000;

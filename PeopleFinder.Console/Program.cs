@@ -19,10 +19,9 @@ namespace PeopleFinder
                 string lastName = Console.ReadLine();
 
                 Console.Write("Enter the new person's age: ");
-                int age;
                 int? dbAge = null;
 
-                if (int.TryParse(Console.ReadLine(), out age))
+                if (int.TryParse(Console.ReadLine(), out int age))
                 {
                     dbAge = age;
                 }

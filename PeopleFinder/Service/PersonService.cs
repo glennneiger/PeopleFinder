@@ -7,7 +7,7 @@ namespace PeopleFinder.Service
 {
     public class PersonService : IPersonService
     {
-        PersonContext _pc;
+        readonly PersonContext _pc;
 
         public PersonService(PersonContext pc)
         {
