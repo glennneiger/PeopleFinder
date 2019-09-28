@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  peoplefinder:
+    image: ${DOCKER_REGISTRY-}peoplefinder
+    build:
+      context: .
+      dockerfile: PeopleFinder/Dockerfile

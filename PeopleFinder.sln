@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29209.152
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PeopleFinder", "PeopleFinder\PeopleFinder.csproj", "{3C4AE949-5978-4E1C-9E4F-0712529BEA3C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7C92676B-A52A-404A-B9B1-1EC97977C906}"
+	ProjectSection(SolutionItems) = preProject
+		DBDocker.txt = DBDocker.txt
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PeopleFinder.Library", "PeopleFinder.Library\PeopleFinder.Library.csproj", "{9961EE09-1B80-4B0D-B20B-37B7DD4D5E4C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PeopleFinder.Test", "PeopleFinder.Test\PeopleFinder.Test.csproj", "{5F9FE40C-5F14-4DED-AAFF-1995270D1819}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C4AE949-5978-4E1C-9E4F-0712529BEA3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C4AE949-5978-4E1C-9E4F-0712529BEA3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C4AE949-5978-4E1C-9E4F-0712529BEA3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C4AE949-5978-4E1C-9E4F-0712529BEA3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9961EE09-1B80-4B0D-B20B-37B7DD4D5E4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9961EE09-1B80-4B0D-B20B-37B7DD4D5E4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9961EE09-1B80-4B0D-B20B-37B7DD4D5E4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9961EE09-1B80-4B0D-B20B-37B7DD4D5E4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F9FE40C-5F14-4DED-AAFF-1995270D1819}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F9FE40C-5F14-4DED-AAFF-1995270D1819}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F9FE40C-5F14-4DED-AAFF-1995270D1819}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F9FE40C-5F14-4DED-AAFF-1995270D1819}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D2FBE4FA-CCF9-4D75-B2D8-7FE2F7B82B8B}
+	EndGlobalSection
+EndGlobal
