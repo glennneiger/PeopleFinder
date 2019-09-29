@@ -1,6 +1,6 @@
 # PeopleFinder API
 ## Requirements
-• Provide a REST endpoint that takes a search input then returns a list of people whose first or last name matches what the input (including at least name, address, age, and interests). 
+• Provide a REST endpoint that takes a search input then returns a list of people whose first or last name matches what the input (including at least name, address, age, and interests).<br/>
 • Seed the application with some users.<br/>
 • Provide a REST endpoint that allows addition of new users.<br/>
 • Provide documentation to interact with the REST endpoints.<br/>
