@@ -30,7 +30,7 @@ To meet the proposed requirements, I first created a database with a Persons tab
 • Search - returning a list of results where first name or last name matches the search input<br/>
 • Add - adding a new person to the Persons table
 
-With the service layer created (both concrete and abstract), I then created the person controller with REST endpoints corresponding with each service function listed above. I also am injecting the person service into the controller's constructor for purposes of modularity and unit testing. I then implemented Swashbuckle (Swagger UI) to serve as self maintained REST documentation (which is also the initial launch page upon running the API).
+With the service layer created (both concrete and abstract), I then created the person controller with REST endpoints corresponding with each service function listed above. I also am injecting the person service into the controller's constructor for purposes of modularity and unit testing. I then implemented Swashbuckle (Swagger UI) to serve as self-maintained REST documentation (which is also the initial launch page upon running the API).
 
 With the API project in place, I then created a MSTest project with test methods written to cover all controller and service functions. For the controller tests, I'm mocking the associated service methods using Moq to isolate testing the controller. For the service tests, I'm using SQLite in-line memory testing for SelectAll, SelectByID, and Search. I'm mocking the person context to test the Add service method.
 
