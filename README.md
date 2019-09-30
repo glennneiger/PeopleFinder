@@ -11,7 +11,7 @@
 • Simulate latency in the API call.
 
 ## Assumptions
-I retrieved the latest version of Visual Studio Community Edition, which was 2019 version 16.3 at the time of this writing. It is also assumed that you would have access to NuGet and therefore able to retrieve/update/restore the packages listed in the Technical Architecture section below.
+I retrieved the latest version of Visual Studio Community Edition, which was 2019 version 16.3 at the time of this writing, and wrote this solution with that version of Visual Studio. I believe that .NET Core 3.0 requires some form of VS 2019. It is also assumed that you would have access to NuGet and therefore able to retrieve/update/restore the packages listed in the Technical Architecture section below.
 
 ## Technical Architecture
 From a technical solution standpoint, the following frameworks/technologies were used to accomplish the proposed requirements and extra credit.
