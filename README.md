@@ -10,6 +10,9 @@
 • Write PowerShell scripts to add or search for particular users.<br/>
 • Simulate latency in the API call.
 
+## Assumptions
+I retrieved the latest version of Visual Studio Community Edition, which was 2019 version 16.3 at the time of this writing. It is also assumed that you would have access to NuGet and therefore able to retrieve/update/restore the packages listed in the Technical Architecture section below.
+
 ## Technical Architecture
 From a technical solution standpoint, the following frameworks/technologies were used to accomplish the proposed requirements and extra credit.
 
